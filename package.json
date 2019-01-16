@@ -1,0 +1,25 @@
+{
+  "name": "browser-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "geckodriver": "^1.14.1",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.12.18",
+    "@types/selenium-webdriver": "^3.0.14",
+    "jest": "^23.6.0",
+    "prettier": "1.15.3",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  }
+}
