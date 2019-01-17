@@ -1,4 +1,4 @@
-import { Builder, By, WebDriver } from 'selenium-webdriver'
+import { Builder, WebDriver } from 'selenium-webdriver'
 import { GooglePage } from '../pages'
 
 describe('Google-tests', () => {
@@ -14,6 +14,10 @@ describe('Google-tests', () => {
     try {
       await googlePage.goToURL()
       await driver.findElement(googlePage.searchButton)
+
+      let title = await driver.getTitle()
+
+      expect(title).toBe('Google')
     } finally {
       await driver.quit()
     }
